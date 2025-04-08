@@ -1,9 +1,10 @@
 import React from "react";
+import About from "./components/About";
 
 const App = () => {
   return (
-    <div className="text-white bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-lg shadow-lg">
-      Hello, Tailwind!
+    <div className="mx-14 mt-14">
+      <About />
     </div>
   );
 };
