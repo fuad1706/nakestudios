@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-10  md:gap-16 mx-48">
+    <div id="about" className=" flex flex-col gap-10  md:gap-16 mx-48">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row">
         <div className="md:w-[65%]">
@@ -32,9 +32,9 @@ const About = () => {
         </div>
 
         <div className="md:w-[35%] flex flex-col gap-2 items-start mt-8 md:mt-0">
-          <img src="/Bolu_nake.jpg" alt="Bolu" className="shadow-lg" />
+          <img src="/images/Bolu_nake.jpg" alt="Bolu" className="shadow-lg" />
           <img
-            src="/bolu_sign.png"
+            src="/images/bolu_sign.png"
             alt="Sign"
             className="h-20 object-contain"
           />

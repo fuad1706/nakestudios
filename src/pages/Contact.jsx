@@ -1,5 +1,4 @@
 import React from "react";
-import Camera from "../../public/contacts_img_camera.png";
 
 const Contact = () => {
   return (
@@ -79,7 +78,7 @@ const Contact = () => {
       {/* Right Section: Image */}
       <div className="md:w-[45%]">
         <img
-          src={Camera}
+          src="/images/contacts_img_camera.png"
           alt="Camera"
           className="w-full h-full object-cover rounded-md"
         />
