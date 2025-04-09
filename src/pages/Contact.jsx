@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-6">
+    <div className="flex flex-col md:flex-row gap-6 mx-48">
       {/* Left Section: Form */}
       <div className="md:w-[45%]">
         <h2 className="text-3xl font-semibold mb-6">
@@ -80,7 +80,7 @@ const Contact = () => {
         <img
           src="/images/contacts_img_camera.png"
           alt="Camera"
-          className="w-full h-full object-cover rounded-md"
+          className="w-full h-full object-contain rounded-md"
         />
       </div>
     </div>
