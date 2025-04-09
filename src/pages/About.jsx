@@ -1,12 +1,13 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-10 md:gap-16">
+    <div className="flex flex-col gap-10  md:gap-16 mx-48">
       {/* Top Section */}
       <div className="flex flex-col md:flex-row">
-        <div className="w-[70%]">
-          <h3 className="mb-6 uppercase text-gray-500">About Us</h3>
+        <div className="md:w-[65%]">
+          <h3 className="mb-6 uppercase text-gray-500 font-bold">About Us</h3>
           <h2 className="mb-6 text-3xl md:text-5xl font-bold leading-tight">
             NAKESTUDiOS is a creative outfit <br /> that specializes in the
             intricate crafts <br /> of cinematography, focusing on both <br />
@@ -30,7 +31,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-[30%] flex flex-col gap-2 items-start mt-8 md:mt-0">
+        <div className="md:w-[35%] flex flex-col gap-2 items-start mt-8 md:mt-0">
           <img src="/Bolu_nake.jpg" alt="Bolu" className="shadow-lg" />
           <img
             src="/bolu_sign.png"
@@ -41,7 +42,7 @@ const About = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="md:w-1/2 flex flex-row gap-2.5 ">
+      <div className="md:w-[60%] flex flex-row gap-2.5 ">
         <div>
           <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-10">
@@ -66,8 +67,8 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="mb-10">
-          <div>
+        <div className="mb-12">
+          <div className="mb-12">
             <h3 className="text-2xl font-semibold mb-10">Creating Memories</h3>
             <p className="text-gray-700 leading-relaxed">
               Whether it’s a commercial project, a special event, or a personal
@@ -77,7 +78,7 @@ const About = () => {
               authentic form.
             </p>
           </div>
-          <div className="mb-10">
+          <div className="">
             <h3 className="text-2xl font-semibold mb-10">Our Commitment</h3>
             <p className="text-gray-700 leading-relaxed">
               For those who live and breathe visual arts, NAKESTUDiOS offers
