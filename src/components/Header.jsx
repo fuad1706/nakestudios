@@ -91,7 +91,7 @@ export default function Header() {
 
             {/* Instagram */}
             <a
-              href="#"
+              href="https://www.instagram.com/nakestudios?igsh=ZzgwNjh0N3JyZzU3"
               className="text-white hover:text-pink-500"
               aria-label="Instagram"
             >
