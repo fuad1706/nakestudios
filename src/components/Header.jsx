@@ -57,10 +57,6 @@ export default function Header() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex flex-col md:flex-row justify-center lg:gap-6 md:gap-3 items-center mb-2 md:mb-0">
             <div className="flex items-center space-x-2">
-              <Phone size={16} className="text-yellow-600" />
-              <span className="text-sm">+234 834 123 2222</span>
-            </div>
-            <div className="flex items-center space-x-2">
               <Mail size={16} className="text-yellow-600" />
               <span className="text-sm">info@nakestudios.org</span>
             </div>

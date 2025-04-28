@@ -121,28 +121,6 @@ export default function Footer() {
               <span className="absolute -bottom-2 left-0 w-16 h-1 bg-yellow-600 transform scale-x-0 origin-left transition-transform duration-1000 group-hover:scale-x-100"></span>
             </h2>
             <div className="space-y-4">
-              <p className="flex items-start group">
-                <MapPin
-                  size={20}
-                  className="mr-2 mt-1 text-yellow-600 flex-shrink-0 transition-transform duration-300 group-hover:scale-125"
-                />
-                <span className="group-hover:text-yellow-600 transition-colors duration-300">
-                  Adeleke Street, Opebi Road, Ikeja, Lagos
-                </span>
-              </p>
-
-              <div className="flex items-center group">
-                <div className="flex items-center w-full">
-                  <Phone
-                    size={20}
-                    className="mr-2 text-yellow-600 transition-transform duration-300 group-hover:scale-125"
-                  />
-                  <span className="group-hover:text-yellow-600 transition-colors duration-300">
-                    +234 818 062 2222
-                  </span>
-                </div>
-              </div>
-
               <div className="flex items-center group">
                 <div className="flex items-center w-full">
                   <Mail
