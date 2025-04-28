@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <section>
       <Hero />
-      <div className="py-8 text-center">
+      <div className="py-4 md:py-8 text-center">
         <ViewButton onClick={handleGoToICreate} />
       </div>
     </section>
