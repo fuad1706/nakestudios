@@ -155,7 +155,7 @@ export default function Footer() {
         >
           {/* Instagram */}
           <a
-            href="#"
+            href="https://www.instagram.com/nakestudios?igsh=ZzgwNjh0N3JyZzU3"
             className="text-black hover:text-pink-500 transition-all duration-300 hover:scale-125"
             aria-label="Instagram"
             onMouseEnter={handleSocialHover}
