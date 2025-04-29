@@ -33,7 +33,7 @@ const ViewButton = ({ onClick }) => {
 
       <div className="flex items-center space-x-2">
         <span className="text-lg font-medium bg-gradient-to-r from-yellow-500 via-amber-600 to-black bg-clip-text text-transparent">
-          View iCreate
+          View iCre8
         </span>
 
         {/* Arrow with bounce effect */}
