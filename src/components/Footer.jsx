@@ -144,69 +144,68 @@ export default function Footer() {
                   </span>
                 </div>
               </div>
+              {/* Social Media Icons */}
+              <div
+                ref={socialIconsRef}
+                className="mt-[-32px] mb-12 md:mb-0 flex justify-start space-x-4 transform translate-y-10 opacity-0 transition-all duration-1000 delay-700 ease-out"
+              >
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/nakestudios?igsh=ZzgwNjh0N3JyZzU3"
+                  className="text-black hover:text-pink-500 transition-all duration-300 hover:scale-125"
+                  aria-label="Instagram"
+                  onMouseEnter={handleSocialHover}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="transition-transform duration-500"
+                  >
+                    <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className="text-black hover:text-blue-500 transition-all duration-300 hover:scale-125"
+                  aria-label="Facebook"
+                  onMouseEnter={handleSocialHover}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="transition-transform duration-500"
+                  >
+                    <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z" />
+                  </svg>
+                </a>
+
+                {/* Threads */}
+                <a
+                  href="#"
+                  className="text-black hover:text-yellow-400 transition-all duration-300 hover:scale-125"
+                  aria-label="Threads"
+                  onMouseEnter={handleSocialHover}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="transition-transform duration-500"
+                  >
+                    <path d="M12.95 2.37c-5.7 0-9.47 3.72-9.47 8.91 0 6.38 4.68 10.35 10.4 10.35 2.92 0 5.88-1.13 7.19-3.46l-1.63-1.05c-1.06 1.78-3.1 2.61-5.51 2.61-3.86 0-6.92-2.66-6.92-7.24 0-3.4 2.47-6.52 6.53-6.52 3.5 0 5.5 2.34 5.5 4.89 0 1.8-.98 3.21-2.77 3.21-1.37 0-2.34-.92-2.34-2.26 0-.68.37-1.15.89-1.15.33 0 .64.15.77.45.18.4.23.9.39 1.38l.25.8c.35 1.17.97 2.25 2.42 2.25 2.16 0 3.56-1.79 3.56-4.4 0-3.47-2.88-6.72-7.36-6.72z" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* Social Media Icons */}
-        <div
-          ref={socialIconsRef}
-          className="mt-8 flex justify-end space-x-4 transform translate-y-10 opacity-0 transition-all duration-1000 delay-700 ease-out"
-        >
-          {/* Instagram */}
-          <a
-            href="https://www.instagram.com/nakestudios?igsh=ZzgwNjh0N3JyZzU3"
-            className="text-black hover:text-pink-500 transition-all duration-300 hover:scale-125"
-            aria-label="Instagram"
-            onMouseEnter={handleSocialHover}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="transition-transform duration-500"
-            >
-              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
-            </svg>
-          </a>
-          <a
-            href="#"
-            className="text-black hover:text-blue-500 transition-all duration-300 hover:scale-125"
-            aria-label="Facebook"
-            onMouseEnter={handleSocialHover}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="transition-transform duration-500"
-            >
-              <path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.2 3-3.2.9 0 1.8.2 1.8.2v2h-1c-1 0-1.3.6-1.3 1.2V12h2.3l-.4 3h-1.9v7A10 10 0 0 0 22 12z" />
-            </svg>
-          </a>
-
-          {/* Threads */}
-          <a
-            href="#"
-            className="text-black hover:text-yellow-400 transition-all duration-300 hover:scale-125"
-            aria-label="Threads"
-            onMouseEnter={handleSocialHover}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              className="transition-transform duration-500"
-            >
-              <path d="M12.95 2.37c-5.7 0-9.47 3.72-9.47 8.91 0 6.38 4.68 10.35 10.4 10.35 2.92 0 5.88-1.13 7.19-3.46l-1.63-1.05c-1.06 1.78-3.1 2.61-5.51 2.61-3.86 0-6.92-2.66-6.92-7.24 0-3.4 2.47-6.52 6.53-6.52 3.5 0 5.5 2.34 5.5 4.89 0 1.8-.98 3.21-2.77 3.21-1.37 0-2.34-.92-2.34-2.26 0-.68.37-1.15.89-1.15.33 0 .64.15.77.45.18.4.23.9.39 1.38l.25.8c.35 1.17.97 2.25 2.42 2.25 2.16 0 3.56-1.79 3.56-4.4 0-3.47-2.88-6.72-7.36-6.72z" />
-            </svg>
-          </a>
         </div>
 
         {/* Copyright */}
