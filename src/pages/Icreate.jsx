@@ -13,7 +13,7 @@ const imgList = [
 const Icreate = () => {
   return (
     <div className="p-4 md:p-8">
-      <div className="grid grid-cols-4 gap-4 ">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
         {imgList.map((img, index) => (
           <img
             key={index}
