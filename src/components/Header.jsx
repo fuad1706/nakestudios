@@ -73,7 +73,7 @@ export default function Header() {
             {[
               { name: "HOME", path: "/" },
               { name: "ABOUT", path: "/about" },
-              { name: "ICREATE", path: "/icreate" },
+              { name: "iCre8", path: "/icreate" },
               { name: "PHOTOGRAPHY", path: "/photography" },
               { name: "MOTION", path: "/motion" },
               { name: "NEWS", path: "/news" },
