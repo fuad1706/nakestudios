@@ -1,5 +1,7 @@
-import { div } from "framer-motion/client";
-import React from "react";
+import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 const imgList = [
   "1copy.jpg",
   "01copy.jpg",
@@ -31,25 +33,36 @@ const imgList = [
   "t.png",
   "u.png",
   "v.png",
+  "w.png",
+  "x.png",
 ];
+
 const Icreate = () => {
+  const [index, setIndex] = useState(-1); // -1 means closed
+
+  const slides = imgList.map((img) => ({
+    src: `/images/${img}`,
+  }));
+
   return (
-    <div className="p-4 md:p-8">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 ">
-        {imgList.map((img, index) => (
-          <div
-            key={index}
-            className="w-full aspect-[4/3] overflow-hidden rounded"
-          >
-            <img
-              src={`/images/${img}`}
-              alt={`Image ${index}`}
-              loading="lazy"
-              className="w-full h-full object-cover "
-            />
-          </div>
-        ))}
-      </div>
+    <div className="p-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {slides.map((slide, i) => (
+        <img
+          key={i}
+          src={slide.src}
+          alt={`Image ${i}`}
+          onClick={() => setIndex(i)}
+          loading="lazy"
+          className="cursor-pointer w-full h-full aspect-[3/4] object-cover rounded hover:scale-105 transition-transform duration-300"
+        />
+      ))}
+
+      <Lightbox
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        index={index}
+        slides={slides}
+      />
     </div>
   );
 };
