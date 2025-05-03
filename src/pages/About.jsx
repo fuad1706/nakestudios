@@ -1,5 +1,4 @@
 import React from "react";
-
 const About = () => {
   return (
     <div
@@ -10,7 +9,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row gap-10">
         <div className="w-full md:w-[65%]">
           <h3 className="mb-4 uppercase text-gray-500 font-bold">About Us</h3>
-          <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug">
+          <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug font-livvic">
             NAKESTUDiOS is a creative outfit that specializes in the intricate
             crafts of cinematography, focusing on both motion and still.
           </h2>
