@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
-import Icreate from "../pages/Icreate";
+import News from "../pages/News";
+import Icre8 from "../pages/Icre8";
 
 const Router = () => {
   return (
@@ -11,7 +12,8 @@ const Router = () => {
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
-      <Route path="/icreate" element={<Icreate />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/icre8" element={<Icre8 />} />
     </Routes>
   );
 };

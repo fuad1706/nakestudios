@@ -37,7 +37,7 @@ const imgList = [
   "x.png",
 ];
 
-const Icreate = () => {
+const Icre8 = () => {
   const [index, setIndex] = useState(-1); // -1 means closed
 
   const slides = imgList.map((img) => ({
@@ -67,4 +67,4 @@ const Icreate = () => {
   );
 };
 
-export default Icreate;
+export default Icre8;
