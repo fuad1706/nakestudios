@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const imgList = [
   "1copy.jpg",
@@ -40,6 +42,14 @@ const imgList = [
 const Icre8 = () => {
   const [index, setIndex] = useState(-1); // -1 means closed
 
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Animation duration in ms
+      once: true, // Only animate once when scrolled into view
+      easing: "ease-in-out",
+    });
+  }, []);
+
   const slides = imgList.map((img) => ({
     src: `/images/${img}`,
   }));
@@ -53,6 +63,7 @@ const Icre8 = () => {
           alt={`Image ${i}`}
           onClick={() => setIndex(i)}
           loading="lazy"
+          data-aos="fade-up" // 👈 AOS scroll animation
           className="cursor-pointer w-full h-full aspect-[3/4] object-cover rounded hover:scale-105 transition-transform duration-300"
         />
       ))}
