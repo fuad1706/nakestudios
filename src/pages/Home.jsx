@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleGoToICreate = () => {
-    navigate("/icreate");
+    navigate("/icre8");
   };
 
   return (

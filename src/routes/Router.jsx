@@ -5,6 +5,8 @@ import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import News from "../pages/News";
 import Icre8 from "../pages/Icre8";
+import NewsDetail from "../pages/NewsDetail";
+import NewsArchives from "../pages/NewsArchives";
 
 const Router = () => {
   return (
@@ -14,6 +16,9 @@ const Router = () => {
       <Route path="/about" element={<About />} />
       <Route path="/news" element={<News />} />
       <Route path="/icre8" element={<Icre8 />} />
+      <Route path="/news/:id" element={<NewsDetail />} />
+      <Route path="/news/archives/:year/:month" element={<NewsArchives />} />
+      <Route path="/news/archives" element={<NewsArchives />} />
     </Routes>
   );
 };
