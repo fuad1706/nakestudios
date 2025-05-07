@@ -1,5 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <div
       id="about"
@@ -7,7 +14,7 @@ const About = () => {
     >
       {/* Top Section */}
       <div className="flex flex-col md:flex-row gap-10">
-        <div className="w-full md:w-[65%]">
+        <div className="w-full md:w-[65%]" data-aos="fade-up">
           <h3 className="mb-4 uppercase text-gray-500 font-bold">About Us</h3>
           <h2 className="mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug font-livvic">
             NAKESTUDiOS is a creative outfit that specializes in the intricate
@@ -28,7 +35,10 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-full md:w-[35%] flex flex-col gap-4 items-start mt-8 md:mt-0">
+        <div
+          className="w-full md:w-[35%] flex flex-col gap-4 items-start mt-8 md:mt-0"
+          data-aos="fade-left"
+        >
           <img
             src="/images/Bolu_nake.jpg"
             alt="Bolu"
@@ -44,12 +54,12 @@ const About = () => {
 
       {/* Bottom Section */}
       <div className="flex flex-col lg:flex-row gap-12">
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2" data-aos="fade-up">
           <div className="mb-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
               Cinematography & Photography
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-base max-w-[60ch]">
               We excel in both motion and still directing, using
               state-of-the-art equipment and cutting-edge techniques to deliver
               stunning visuals. Our work is defined by its emotional depth,
@@ -60,7 +70,7 @@ const About = () => {
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
               Visual Storytelling
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-base max-w-[60ch]">
               Every project at NAKESTUDiOS begins with a story. We believe that
               the most powerful visuals are those that tell a story and evoke
               emotion. Our team works closely with clients to understand their
@@ -69,12 +79,16 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div
+          className="w-full lg:w-1/2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div className="mb-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
               Creating Memories
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-base max-w-[60ch]">
               Whether it’s a commercial project, a special event, or a personal
               milestone, we are committed to capturing and creating memories
               that last a lifetime. Our approach is personalized and meticulous,
@@ -86,7 +100,7 @@ const About = () => {
             <h3 className="text-xl md:text-2xl font-semibold mb-4">
               Our Commitment
             </h3>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-base max-w-[60ch]">
               For those who live and breathe visual arts, NAKESTUDiOS offers
               advanced resources, exclusive workshops, and masterclasses led by
               industry pioneers. We foster a community of elite professionals
